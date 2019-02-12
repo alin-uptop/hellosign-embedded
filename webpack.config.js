@@ -20,7 +20,7 @@ const config = {
   module: {
     rules: [
       {
-        test: /\.js$/,
+        test: /\.ts$/,
         // Ordinarily we would `exclude: /node_modules/`
         // here, however some depdendencies use ES6 and
         // other new syntax. To ensure that our lib works
