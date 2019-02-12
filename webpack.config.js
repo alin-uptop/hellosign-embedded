@@ -17,6 +17,9 @@ const config = {
     libraryExport: 'default',
     libraryTarget: 'umd',
   },
+  resolve: {
+    extensions: [ '.tsx', '.ts', '.js' ]
+  },
   module: {
     rules: [
       {
