@@ -8,7 +8,7 @@ const config = {
     'url-polyfill',
     'url-search-params-polyfill',
     './src/sass/embedded.scss',
-    './src/embedded.js',
+    './src/embedded.ts',
   ],
   output: {
     path: path.join(__dirname, 'umd'),
@@ -27,6 +27,7 @@ const config = {
         // for as many users as possible, we pipe node
         // modules through Babel as well. See #99.
         use: 'babel-loader',
+        loader: "ts-loader",
       },
       {
         test: /\.scss$/,
